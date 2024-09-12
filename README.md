@@ -7,22 +7,29 @@ This is a fork of https://github.com/bonosoft/sveltekit-qrcode
 The original package is not maintained and does not support SvelteKit 5.
 
 ## Install
-Use your package manager to install the module:
+Use your package manager to install the module directly from GitHub:
+
 ```shell
-npm install @bonosoft/sveltekit-qrcode
+npm install trasherdk/svelte-qrcode
+```
+
+Alternatively, you can specify a particular branch or commit:
+
+```shell
+npm install trasherdk/svelte-qrcode#main
 ```
 
 ## Adding QR Codes to a svelte file in SvelteKit
 Now you can start adding QR Codes to your pages.
 ```ts
 <script lang="ts">
-	import QRCode from "@bonosoft/sveltekit-qrcode"
+	import QRCode from "@trasherdk/svelte-qrcode"
 </script>
 
 <QRCode content="Test"></QRCode>
 ```
 
-![Alt text](https://github.com/trasherdk/sveltekit-qrcode/readme/sample1.svg?sanitize=true)
+![Alt text](https://github.com/trasherdk/svelte-qrcode/raw/main/readme/sample1.svg)
 
 # Quick Response Codes
 While conventional bar codes are capable of storing a maximum of approximately 20 digits, QR Code is capable of handling several dozen to several hundred times more information.
@@ -58,16 +65,16 @@ With the colour settings, you can control both the front and background colour.
 <QRCode color="#ffffff" bgcolor="#009900" content="https://trasher.dk/"/>
 ```
 
-![Alt text](https://github.com/bonosoft/sveltekit-qrcode/blob/86ae32abc4460e78fd3e60acefab5f072aed1b24/readme/sample2.svg?sanitize=true)
+![QR Code Color Examples](https://github.com/trasherdk/svelte-qrcode/raw/main/readme/sample2.svg)
 
 ## QR Code error correction
 QR Code has error correction capability to restore data if the code is dirty or damaged. Four error correction levels are available for users to choose according to the operating environment. Raising this level improves error correction capability but also increases the amount of data QR Code size.
 To select error correction level, various factors such as the operating environment and QR Code size need to be considered. Level Q or H may be selected for factory environment where QR Code get dirty, whereas Level L may be selected for clean environment with the large amount of data. Typically, Level M (15%) is most frequently selected.
 
-Level L  Approx 7%
-Level M  Approx 15%
-Level Q  Approx 25%
-Level H  Approx 30%
+* Level L  Approx 7%
+* Level M  Approx 15%
+* Level Q  Approx 25%
+* Level H  Approx 30%
 
 ```ts
 <QRCode errorCorrection='L' content="https://trasher.dk/"/>
@@ -85,4 +92,4 @@ Sample URL for a John Doe user on the Acme app:
 <QRCode content="otpauth://totp/ACME%20Co:john.doe@email.com?secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&issuer=ACME%20Co&algorithm=SHA1&digits=6&period=30"/>
 ```
 
-![Alt text](https://github.com/bonosoft/sveltekit-qrcode/blob/86ae32abc4460e78fd3e60acefab5f072aed1b24/readme/sample3.svg?sanitize=true)
+![QR Code TOTP Example](https://github.com/trasherdk/svelte-qrcode/raw/main/readme/sample3.svg)
