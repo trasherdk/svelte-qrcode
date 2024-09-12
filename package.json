@@ -1,9 +1,10 @@
 {
 	"name": "@trasherdk/svelte-qrcode",
-	"description": "QR Code generator component for SvelteKit",
+	"description": "QR Code generator component for Svelte",
 	"version": "0.1.1",
 	"author": "TrasherDK",
 	"license": "MIT",
+	"access": "public",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/trasherdk/svelte-qrcode.git"
