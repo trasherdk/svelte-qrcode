@@ -1,5 +1,11 @@
 # QR Code generator for SvelteKit
 
+## Note
+
+This is a fork of https://github.com/bonosoft/sveltekit-qrcode
+
+The original package is not maintained and does not support SvelteKit 5.
+
 ## Install
 Use your package manager to install the module:
 ```shell
@@ -16,7 +22,7 @@ Now you can start adding QR Codes to your pages.
 <QRCode content="Test"></QRCode>
 ```
 
-![Alt text](https://github.com/bonosoft/sveltekit-qrcode/blob/bfe7e6742816a97fa2712295033ef9011046773d/readme/sample1.svg?sanitize=true)
+![Alt text](https://github.com/trasherdk/sveltekit-qrcode/readme/sample1.svg?sanitize=true)
 
 # Quick Response Codes
 While conventional bar codes are capable of storing a maximum of approximately 20 digits, QR Code is capable of handling several dozen to several hundred times more information.
@@ -27,7 +33,7 @@ QR Code is capable of handling all types of data, such as numeric and alphabetic
 Content is the text that needs to be send to the code reader. The text is normally an URL to a web site, or a code that is used by an application, for example in handling secrets in time based one time password applications.
 
 ```ts
-<QRCode content="https://www.bonosoft.dk/"/>
+<QRCode content="https://trasher.dk/"/>
 ```
 
 # Size, padding and responsive
@@ -36,20 +42,20 @@ You can set the size used for generation, the larger the size, the more informat
 With the repsponsive settings enabled, the size settings will only be used in the code calculation, and the container will addapt and use all available space in it's parent element.
 
 ```ts
-<QRCode size="50" content="https://www.bonosoft.dk/"/>
+<QRCode size="50" content="https://trasher.dk/"/>
 
-<QRCode padding="10" content="https://www.bonosoft.dk/"/>
+<QRCode padding="10" content="https://trasher.dk/"/>
 
-<QRCode responsive='true' content="https://www.bonosoft.dk/"/>
+<QRCode responsive='true' content="https://trasher.dk/"/>
 ```
 
 # Colours
 With the colour settings, you can control both the front and background colour.
 
 ```ts
-<QRCode color="#009900" content="https://www.bonosoft.dk/"/>
+<QRCode color="#009900" content="https://trasher.dk/"/>
 
-<QRCode color="#ffffff" bgcolor="#009900" content="https://www.bonosoft.dk/"/>
+<QRCode color="#ffffff" bgcolor="#009900" content="https://trasher.dk/"/>
 ```
 
 ![Alt text](https://github.com/bonosoft/sveltekit-qrcode/blob/86ae32abc4460e78fd3e60acefab5f072aed1b24/readme/sample2.svg?sanitize=true)
@@ -64,13 +70,13 @@ Level Q  Approx 25%
 Level H  Approx 30%
 
 ```ts
-<QRCode errorCorrection='L' content="https://www.bonosoft.dk/"/>
+<QRCode errorCorrection='L' content="https://trasher.dk/"/>
 
-<QRCode errorCorrection='M' content="https://www.bonosoft.dk/"/>
+<QRCode errorCorrection='M' content="https://trasher.dk/"/>
 
-<QRCode errorCorrection='Q' content="https://www.bonosoft.dk/"/>
+<QRCode errorCorrection='Q' content="https://trasher.dk/"/>
 
-<QRCode errorCorrection='H' content="https://www.bonosoft.dk/"/>
+<QRCode errorCorrection='H' content="https://trasher.dk/"/>
 ```
 
 # For use with Time based one time passwords (TOTP)
