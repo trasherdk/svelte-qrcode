@@ -1,10 +1,10 @@
-# QR Code generator for SvelteKit
+# QR Code generator for Svelte
 
 ## Note
 
 This is a fork of https://github.com/bonosoft/sveltekit-qrcode
 
-The original package is not maintained and does not support SvelteKit 5.
+The original package is not maintained and does not support Svelte 5.
 
 ## Install
 Use your package manager to install the module directly from GitHub:
