@@ -1,15 +1,15 @@
 {
-	"name": "@bonosoft/sveltekit-qrcode",
+	"name": "@trasherdk/svelte-qrcode",
 	"description": "QR Code generator component for SvelteKit",
 	"version": "1.0.0",
-	"author": "Bonosoft",
+	"author": "TrasherDK",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/bonosoft/sveltekit-qrcode.git"
+		"url": "https://github.com/trasherdk/svelte-qrcode.git"
 	},
 	"bugs": {
-		"url": "https://github.com/bonosoft/sveltekit-qrcode/issues"
+		"url": "https://github.com/trasherdk/svelte-qrcode/issues"
 	},
 	"keywords": [
 		"svelte",
