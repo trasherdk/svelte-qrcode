@@ -2,7 +2,6 @@
   import { QRCode } from "$lib";
 
   const content = "https://www.npmjs.com/package/@trasherdk/svelte-qrcode";
-  const imageUrl = "/fumlersoft-shield-64.png";
 </script>
 
 <svelte:head>
@@ -61,6 +60,18 @@
   />
 </div>
 
+<h2>QR Code with Centered Image</h2>
+<div class="centered">
+  <div class="qr-container">
+    <QRCode {content} size="300" />
+    <img
+      src="/fumlersoft-shield-64.png"
+      alt="Fumlersoft Shield"
+      class="qr-overlay"
+    />
+  </div>
+</div>
+
 <style>
   .centered {
     display: flex;
@@ -79,5 +90,19 @@
     width: 20%;
     resize: horizontal;
     overflow: auto;
+  }
+
+  .qr-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .qr-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
   }
 </style>
