@@ -10,13 +10,7 @@ The original package is not maintained and does not support Svelte 5.
 Use your package manager to install the module directly from GitHub:
 
 ```shell
-npm install trasherdk/svelte-qrcode
-```
-
-Alternatively, you can specify a particular branch or commit:
-
-```shell
-npm install trasherdk/svelte-qrcode#main
+npm install @trasherdk/svelte-qrcode
 ```
 
 ## Adding QR Codes to a svelte file in SvelteKit
