@@ -1,13 +1,13 @@
 {
 	"name": "@trasherdk/svelte-qrcode",
 	"description": "QR Code generator component for Svelte",
-	"version": "0.2.2",
+	"version": "0.2.3",
 	"author": "TrasherDK",
 	"license": "MIT",
 	"access": "public",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/trasherdk/svelte-qrcode.git"
+		"url": "git+https://github.com/trasherdk/svelte-qrcode.git"
 	},
 	"bugs": {
 		"url": "https://github.com/trasherdk/svelte-qrcode/issues"
@@ -46,21 +46,21 @@
 	"svelte": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.2.4",
-		"@sveltejs/adapter-node": "^2.1.2",
-		"@sveltejs/kit": "^2.5.26",
-		"@sveltejs/package": "^2.3.4",
-		"@sveltejs/vite-plugin-svelte": "^3.1.2",
-		"@types/node": "^22.5.4",
-		"publint": "^0.1.16",
-		"svelte": "^4.2.19",
-		"svelte-check": "^3.8.6",
+		"@sveltejs/adapter-node": "^5.2.6",
+		"@sveltejs/kit": "^2.7.0",
+		"@sveltejs/package": "^2.3.5",
+		"@sveltejs/vite-plugin-svelte": "4.0.0-next.8",
+		"@types/node": "^22.7.5",
+		"publint": "^0.2.11",
+		"svelte": "5.0.0-next.264",
+		"svelte-check": "^4.0.5",
 		"tslib": "^2.7.0",
-		"typescript": "^5.6.2",
-		"vite": "^5.4.4"
+		"typescript": "^5.6.3",
+		"vite": "^5.4.8"
 	},
 	"peerDependencies": {
-		"svelte": "^3.54.0"
+		"picomatch": "^3 || ^4",
+		"svelte": "^4 || ^5"
 	},
 	"type": "module"
 }
