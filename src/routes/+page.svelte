@@ -1,5 +1,5 @@
 <script>
-  import { QRCode } from "$lib";
+  import QRCode from "$lib";
 
   const content = "https://www.npmjs.com/package/@trasherdk/svelte-qrcode";
 </script>
